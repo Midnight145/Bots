@@ -26,7 +26,7 @@ async def on_message(message: Message):
                 else:
                     level_dictionary[user] = 1
 
-                await context.send("You leveled up!")
+                await context.send(f"You leveled up! You are now level {level_dictionary[user]}")
 
 
 client.run(getpass("What is your discord secret: "))
